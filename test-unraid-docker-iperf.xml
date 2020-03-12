@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>test-unraid-docker-iperf</Name>
+  <Repository>jimde/test-unraid-docker-iperf</Repository>
+  <Registry>https://hub.docker.com/r/jimde/test-unraid-docker-iperf</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>iperf server</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams>-it</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1584051113</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>iperf server</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5001</HostPort>
+        <ContainerPort>5001</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="iperf port" Target="5001" Default="5001" Mode="tcp" Description="Container Port: " Type="Port" Display="always" Required="false" Mask="false">5001</Config>
+</Container>

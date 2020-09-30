@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>opengrok</Name>
+  <Repository>opengrok/docker</Repository>
+  <Registry>https://hub.docker.com/r/opengrok/docker/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/opengrok/docker/</Support>
+  <Project/>
+  <Overview>Official OpenGrok docker   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI>http://192.168.2.20:9000/</WebUI>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset>0,1,4,5</CPUset>
+  <DateInstalled>1599596322</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Official OpenGrok docker   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9000</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/OPENGROK/SRC/</HostDir>
+      <ContainerDir>/opengrok/src</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/OPENGROK/DATA/</HostDir>
+      <ContainerDir>/opengrok/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/OPENGROK/ETC/</HostDir>
+      <ContainerDir>/opengrok/etc</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Container web interface port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
+  <Config Name="Source dir" Target="/opengrok/src" Default="" Mode="rw" Description="Container Path: /opengrok/src" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/OPENGROK/SRC/</Config>
+  <Config Name="Opengrok data" Target="/opengrok/data" Default="" Mode="rw" Description="Container Path: /opengrok/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/OPENGROK/DATA/</Config>
+  <Config Name="Opengrok config" Target="/opengrok/etc" Default="" Mode="rw" Description="Container Path: /opengrok/etc" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/OPENGROK/ETC/</Config>
+</Container>

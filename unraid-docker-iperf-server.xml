@@ -12,12 +12,10 @@
   <Overview>iperf server</Overview>
   <Category/>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/jimde/unraid-docker-templates/master/unraid-docker-iperf-server.xml</TemplateURL>
   <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
   <ExtraParams>-it</ExtraParams>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1584051113</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>iperf server</Description>
@@ -34,5 +32,4 @@
   <Data/>
   <Environment/>
   <Labels/>
-  <Config Name="iperf port" Target="5001" Default="5001" Mode="tcp" Description="Container Port: " Type="Port" Display="always" Required="false" Mask="false">5001</Config>
 </Container>
